@@ -21,9 +21,7 @@ elif (diff < 0):
     for i in range(-diff):
         first.insert(0, 0)
 
-result = []
-for i in range(len(first)):
-    result.append(first[i] + second[i])
+result = [first[i] + second[i] for i in range(len(first))]
 
 print("result:", result)
 

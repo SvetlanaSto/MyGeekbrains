@@ -4,9 +4,7 @@ import random
 
 k = int(input('Задайте степень k от 0 до 100: '))
 
-list = []
-for i in range(k + 1):
-    list.append(random.randint(0, k))
+list = [random.randint(0, k) for i in range(k + 1)]
 
 print(list)
 

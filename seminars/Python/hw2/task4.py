@@ -3,9 +3,7 @@ from itertools import product
 import random
 
 N = int(input('Введите число N: '))
-l = []
-for i in range(0, N):
-    l.append(random.randint(-N, N-1))
+l = [random.randint(-N, N-1) for i in range(0, N)]
 
 print(f'Сгенерирован список из {N} элементов: {l}')
 

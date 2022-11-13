@@ -2,9 +2,7 @@
 
 import random
 
-list = []
-for i in range(20):
-    list.append(random.randint(0, 20))
+list = [random.randint(0, 20) for i in range(20)]
 
 print(list)
 

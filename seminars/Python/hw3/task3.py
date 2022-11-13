@@ -2,15 +2,11 @@
 
 import random
 
-a = []
-for i in range(10):
-    a.append(round(random.uniform(0.01, 100), 2))
+a = [round(random.uniform(0.01, 100), 2) for i in range(10)]
 print(a)
 
-b = []
-for elem in a:
-    if elem % 1 != 0:
-        b.append(round(elem % 1, 2))
+#b = [round(elem % 1, 2) for elem in a if elem % 1 != 0]
+b = list(map(lambda it: round(it % 1, 2), filter(lambda it: it % 1 != 0, a)))
 print(b)
 
 min = b[0]

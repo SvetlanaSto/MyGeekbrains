@@ -6,11 +6,8 @@ numbers = list(range(-1, 10))
 random.shuffle(numbers)
 print(numbers)
 
-result_numbers = []
 len_result_numbers = int(len(numbers) / 2 + len(numbers) % 2)
-
-for i in range(len_result_numbers):
-    product = numbers[i] * numbers[-i-1]
-    result_numbers.append(product)
-
-print(f'Произведение пар чисел: {result_numbers}')
+a = numbers[:len_result_numbers]
+b = reversed(numbers[len_result_numbers - 1:])
+c = list(map(lambda it: it[0]*it[1], zip(a, b)))
+print(f'Произведение пар чисел: {c}')
