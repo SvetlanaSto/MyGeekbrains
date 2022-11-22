@@ -1,4 +1,4 @@
-def Search_Entry(file):
+def search_entry(file):
 
     print(f'Введите элемент имя сотрудника для поиска в БД: ')
     name = input()

@@ -1,10 +1,10 @@
-def New_Entry():
+def new_entry():
     ID = input('Введите ID: ')
-    sirname = input('Введите фамилию: ')
-    name = input('Введите имя: ')
+    lastname = input('Введите фамилию: ')
+    firstname = input('Введите имя: ')
     father_name = input('Введите отчество: ')
     phone = input('Введите номер телефона: ')
     department = input('Введите отдел: ')
     position = input('Введите должность: ')
     with open('employees.csv','a', encoding='utf-8') as book:
-        book.write(f'{ID}, {sirname}, {name}, {father_name}, {phone}, {department}, {position};\n')
+        book.write(f'{ID}, {lastname}, {firstname}, {father_name}, {phone}, {department}, {position};\n')

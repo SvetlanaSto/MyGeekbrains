@@ -1,4 +1,4 @@
-def Edit_Entry(file):
+def edit_entry(file):
 
     print(f'Введите элемент имя сотрудника для изменения данных о нём в БД: ')
     name = input()

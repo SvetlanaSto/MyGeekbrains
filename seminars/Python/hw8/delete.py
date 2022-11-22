@@ -1,4 +1,4 @@
-def delete_str(file):
+def delete_entry(file):
 
     print(f'Введите элемент имя сотрудника для удаления данных о нём из БД')
     name = input()
