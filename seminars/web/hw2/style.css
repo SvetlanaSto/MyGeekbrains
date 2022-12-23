@@ -1,0 +1,10 @@
+h1 {
+    color: rgba(58, 35, 142, 0.945);
+    text-align: center;
+}
+
+html {
+    font-family: sans-serif;
+    width: 700px;
+    margin: 0 auto;
+}
