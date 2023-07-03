@@ -41,7 +41,7 @@ product_fraction = fraction_multiplication(fract1, fract2)
 print("Произведение дробей:", product_fraction)
 
 expected_sum = Fraction(fract1) + Fraction(fract2)
-#input('ожидаемая сумма через Fractions: ', expected_sum)
+print('ожидаемая сумма через Fractions: {}'.format(expected_sum))
 
 expected_mult = Fraction(fract1) * Fraction(fract2)
-#input('ожидаемое произведение через Fractions: ', expected_mult)
+print('ожидаемое произведение через Fractions: {}'.format(expected_mult))
