@@ -1,0 +1,9 @@
+folder_in: /home/sveta/7ztest/tst
+folder_out: /home/sveta/7ztest/out
+folder_ext:  /home/sveta/7ztest/folder1
+folder_ext2: /home/sveta/7ztest/folder2
+badarx: /home/sveta/7ztest/badarx
+
+count: 5
+size: 1M
+type: zip
