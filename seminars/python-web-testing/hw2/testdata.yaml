@@ -1,0 +1,11 @@
+address: https://test-stand.gb.ru/
+browser: chrome
+sleep_time: 1
+implicitly_wait: 3
+
+username: Inna
+password: b04f8370a4
+
+title: 'test title'
+description: 'test description'
+content: 'test content'
