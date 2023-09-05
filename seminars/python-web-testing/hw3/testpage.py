@@ -83,13 +83,13 @@ class OperationsHelper(BasePage):
         logging.info("Click Contact Us")
         self.find_element(TestSearchLocators.LOCATOR_CONTACT_US).click()
 
-    def enter_сontact_us_name(self, word):
+    def enter_contact_us_name(self, word):
         logging.info(f'Send {word} to element {TestSearchLocators.LOCATOR_CONTACT_US_NAME_FIELD[1]}')
         name_field = self.find_element(TestSearchLocators.LOCATOR_CONTACT_US_NAME_FIELD)
         name_field.clear()
         name_field.send_keys(word)
 
-    def enter_сontact_us_email(self, word):
+    def enter_contact_us_email(self, word):
         logging.info(f'Send {word} to element {TestSearchLocators.LOCATOR_CONTACT_US_EMAIL_FIELD[1]}')
         email_field = self.find_element(TestSearchLocators.LOCATOR_CONTACT_US_EMAIL_FIELD)
         email_field.clear()
@@ -104,4 +104,3 @@ class OperationsHelper(BasePage):
     def click_contact_us_btn(self):
         logging.info('Click contact us button')
         self.find_element(TestSearchLocators.LOCATOR_CONTACT_US_BTN).click()
-

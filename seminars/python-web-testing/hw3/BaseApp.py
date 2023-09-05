@@ -20,4 +20,3 @@ class BasePage:
 
     def switch_to_alert(self):
         return self.driver.switch_to.alert
-

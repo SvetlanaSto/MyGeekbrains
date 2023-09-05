@@ -1,0 +1,21 @@
+wsdl: https://speller.yandex.net/services/spellservice?WSDL
+
+address: https://test-stand.gb.ru
+browser: firefox
+sleep_time: 1
+implicitly_wait: 3
+
+username: Inna
+password: b04f8370a4
+
+test_title: 'test title'
+test_description: 'test description'
+test_content: 'test content'
+
+test_contact_us_name: 'test name'
+test_contact_us_email: 'test@email.ru'
+test_contact_us_content: 'test contact us content'
+test_contact_us_alert: 'Form successfully submitted'
+
+test_soap_correct_word: 'молоко'
+test_soap_incorrect_word: 'малако'

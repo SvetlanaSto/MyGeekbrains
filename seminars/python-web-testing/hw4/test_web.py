@@ -2,9 +2,10 @@ import logging
 import time
 
 import yaml
+
 from testpage import OperationsHelper
 
-with open('testdata.yaml') as f:
+with open('testdata.yaml', encoding="utf-8") as f:
     testdata = yaml.safe_load(f)
 
 
@@ -32,11 +33,11 @@ def test_step3(browser):
     logging.info('Test3 Starting')
     testpage = OperationsHelper(browser)
     testpage.click_create_post_btn()
-    time.sleep(1)
+    time.sleep(2)
     testpage.enter_post_title(testdata['test_title'])
     testpage.enter_post_description(testdata['test_description'])
     testpage.enter_post_content(testdata['test_content'])
-    testpage.click_save_btn()
+    testpage.click_save_post_btn()
     time.sleep(2)
     assert testpage.get_added_post_title() == testdata['test_title'], 'test3 failed'
 
@@ -51,8 +52,7 @@ def test_step4(browser):
     testpage.enter_contact_us_content(testdata['test_contact_us_content'])
     testpage.click_contact_us_btn()
     time.sleep(2)
-    alert = testpage.switch_to_alert()
-    result = alert.text
-    assert result == testdata['test_contact_us_alert'], 'test4 failed'
+    alert_text = testpage.get_alert_text()
+    assert alert_text == testdata['test_contact_us_alert'], 'test4 failed'
 
 
